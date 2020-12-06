@@ -1,11 +1,21 @@
 <template>
-  <div class="relative flex justify-center items-center w-20 h-20" style="z-index: 999;">
+  <div class="relative flex justify-center items-center w-16 h-16" style="z-index: 999;">
+    <nav class="delay-0 invisible main-nav absolute bottom-12 right-5 text-pri font-bold z-50" :class="{open: isOpen}">
+      <ul>
+        <li v-for="(item, index) in menuItems" class="cursor-pointer list-none uppercase text-right text-base my-2">{{item}}</li>
+      </ul>
+    </nav>
     <div class="circle absolute bottom-0 right-0" :class="{open: isOpen}"></div>
-    <div id="nav-icon3" class="w-20 lg:w-8 h-16 lg:h-6" :class="{ open: isOpen }" @click="open">
-      <span class="h-1 lg:h-1 top-0"></span>
+    <!-- <div id="nav-icon3" class="w-20 lg:w-8 h-16 lg:h-6" :class="{ open: isOpen }" @click="open"> -->
+    <div id="nav-icon3" class="w-6 h-4" :class="{ open: isOpen }" @click="open">
+      <span class="h-1 h-1"></span>
+      <span class="h-1 h-1 top-2"></span>
+      <span class="h-1 h-1 top-2"></span>
+      <span class="h-1 h-1 top-4"></span>
+      <!--  <span class="h-1 lg:h-1 top-0"></span>
       <span class="h-1 lg:h-1 top-6 lg:top-3"></span>
       <span class="h-1 lg:h-1 top-6 lg:top-3"></span>
-      <span class="h-1 lg:h-1 top-12 lg:top-6"></span>
+      <span class="h-1 lg:h-1 top-12 lg:top-6"></span>-->
     </div>
   </div>
 </template>
@@ -16,7 +26,8 @@
     name: 'HamIcon',
     data: function() {
       return {
-        isOpen: false
+        isOpen: false,
+        menuItems: ['stories', 'about', 'contributors', 'tweets', 'connect'],
       }
     },
     mounted() {
@@ -32,13 +43,19 @@
 </script>
 
 <style scoped>
+.main-nav {
+}
+.main-nav.open {
+  @apply visible delay-300;
+}
+
 .circle {
-  @apply bg-white rounded-full p-5 flex justify-center items-center w-full h-full;
+  @apply bg-white rounded-full shadow p-5 flex justify-center items-center w-full h-full;
   transition: all .3s ease-in-out;
 }
 
 .circle.open{
-  transform: translateX(50px) scale(9);
+  transform: translateX(50px) scale(8);
 }
 
 #nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {

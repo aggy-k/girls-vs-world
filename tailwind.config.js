@@ -708,6 +708,7 @@ module.exports = {
       '1000': '1000ms',
     },
     transitionDelay: {
+      '0': '0ms',
       '75': '75ms',
       '100': '100ms',
       '150': '150ms',
