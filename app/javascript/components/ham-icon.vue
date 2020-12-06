@@ -80,7 +80,7 @@
   /*height: 3px;*/
   width: 100%;
   background: #E91A62;
-  border-radius: 9px;
+  border-radius: 5px;
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);
