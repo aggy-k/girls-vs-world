@@ -1,9 +1,12 @@
 <template>
-  <div id="nav-icon3" class="w-20 lg:w-8 h-16 lg:h-6" :class="{ open: isOpen }" @click="open">
-    <span class="h-1 lg:h-1 top-0"></span>
-    <span class="h-1 lg:h-1 top-6 lg:top-3"></span>
-    <span class="h-1 lg:h-1 top-6 lg:top-3"></span>
-    <span class="h-1 lg:h-1 top-12 lg:top-6"></span>
+  <div class="relative flex justify-center items-center w-20 h-20">
+    <div class="circle absolute bottom-0 right-0" :class="{open: isOpen}"></div>
+    <div id="nav-icon3" class="w-20 lg:w-8 h-16 lg:h-6" :class="{ open: isOpen }" @click="open">
+      <span class="h-1 lg:h-1 top-0"></span>
+      <span class="h-1 lg:h-1 top-6 lg:top-3"></span>
+      <span class="h-1 lg:h-1 top-6 lg:top-3"></span>
+      <span class="h-1 lg:h-1 top-12 lg:top-6"></span>
+    </div>
   </div>
 </template>
 
@@ -29,6 +32,15 @@
 </script>
 
 <style scoped>
+.circle {
+  @apply bg-white rounded-full p-5 flex justify-center items-center w-full h-full;
+  transition: all .3s ease-in-out;
+}
+
+.circle.open{
+  transform: translateX(50px) scale(9);
+}
+
 #nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
   /* width: 47px;
   height: 35px; */

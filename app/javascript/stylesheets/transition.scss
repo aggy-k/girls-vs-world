@@ -21,3 +21,26 @@
   }
 }
 
+// GROW
+.grow-enter-active,
+.grow-leave-active {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: grow;
+}
+
+.grow-leave-active {
+  animation-direction: reverse;
+}
+
+@keyframes grow {
+  from {
+    height: 0px;
+    width: 0px;
+  }
+
+  100% {
+    height: 400px;
+    width: 400px;
+  }
+}
