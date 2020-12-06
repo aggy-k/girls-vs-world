@@ -1,0 +1,23 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "transition";
+@import "animation";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'October Twilight';
+  src: url('Octobertwilight-lzwZ.otf');
+}
+
+@font-face {
+  font-family: 'Autumn';
+  src: url('Autumninnovember-rRX8.otf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');

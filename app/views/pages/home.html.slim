@@ -1,0 +1,36 @@
+div.flex.h-screen
+  div {class="relative flex justify-center items-center bg-scroll bg-cover bg-center bg-no-repeat w-full h-screen" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url(https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80)  "}
+    p.absolute.bottom-5.left-5.text-xs
+      | Image credit by
+      a {href="https://unsplash.com/@johnschno" target="_blank" class="underline"}  John Schnobrich
+      |  at
+      a {href="https://unsplash.com/" target="_blank" class="underline"}  unsplash
+    h2.font-logo.text-5xl.text-white.text-center style="text-shadow: 2px 2px #E91A62"
+      | Gi
+      span.underline rls vs. the Wo
+      | rld
+
+
+  / div {class="w-1/2 min-h-screen p-4 flex items-center border-box"}
+  /   div {class="w-full h-full overflow-scroll p-4 border-box"}
+  /     h2.text-pri.text-4xl.underline.font-logo.mb-6 Featured Stories
+  /     div.w-full.grid.grid-cols-1.gap-4
+  /       - 1.upto(6).each do |lorem|
+  /         div.border.h-48.flex.w-full.rounded-xl.shadow-lg
+
+  /           div.w-1/2.p-4.relative
+  /             h3.text-2xl.font-bold.truncate
+  /               = 'Title of the Story'.upcase
+  /             p.text-sm
+  /               = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.".truncate(100)
+  /             div.absolute.bottom-4.text-xs.flex.items-center
+  /               = image_tag "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLdv4W75xymx2lQricAqEUicH0heU8BnwsiaSRx8cI2A5BOrfwR3A6G14azqRKnm9IwkYX96wvhTe9TQ/132", class: "w-6 h-6 overflow-hidden rounded-full mr-2 border-2 border-sec"
+  /               p
+  /                 | By
+  /                 span.text-pri.font-bold  Aggy K.
+  /                 |  Nov 20th, 2020
+
+  /           div.w-1/2.bg-cover.bg-no-repeat.rounded-r-xl style="background-image: url(https://images.unsplash.com/photo-1572033469469-e01521f4ed95?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80)"
+
+
+

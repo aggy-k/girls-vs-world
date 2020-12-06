@@ -1,0 +1,20 @@
+
+import Vue from 'vue/dist/vue.esm'
+import TurbolinksAdapter from 'vue-turbolinks';
+import Axios from 'axios';
+import VueAxios from 'vue-axios';
+
+import '../components/index.js.erb';
+
+Vue.use(VueAxios, Axios);
+Vue.use(TurbolinksAdapter);
+
+import HamIcon from '../components/ham-icon';
+Vue.component('ham-icon', HamIcon)
+
+document.addEventListener('turbolinks:load', () => {
+  const app = new Vue({
+    el: '[data-behavior="vue"]'
+  })
+  console.log(app)
+});

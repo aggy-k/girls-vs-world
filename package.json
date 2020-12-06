@@ -1,0 +1,27 @@
+{
+  "name": "girls_vs_world",
+  "private": true,
+  "dependencies": {
+    "@rails/actioncable": "^6.0.0",
+    "@rails/activestorage": "^6.0.0",
+    "@rails/ujs": "^6.0.0",
+    "@rails/webpacker": "4.3.0",
+    "activestorage": "^5.2.4-4",
+    "animate.css": "^4.1.1",
+    "axios": "^0.21.0",
+    "css-loader": "^5.0.1",
+    "rails-erb-loader": "^5.5.2",
+    "rails-ujs": "^5.2.4-4",
+    "tailwindcss": "1.9.6",
+    "turbolinks": "^5.2.0",
+    "vue": "^2.6.12",
+    "vue-axios": "^3.2.0",
+    "vue-loader": "^15.9.5",
+    "vue-template-compiler": "^2.6.12",
+    "vue-turbolinks": "^2.1.0"
+  },
+  "version": "0.1.0",
+  "devDependencies": {
+    "webpack-dev-server": "^3.11.0"
+  }
+}
