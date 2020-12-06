@@ -7,11 +7,12 @@ html
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     /= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
     = stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = stylesheet_pack_tag 'hello_vue', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application', defer: true, 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'hello_vue', defer: true, 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'hello_erb', defer: true, 'data-turbolinks-track': 'reload'
   body.text-gray-600.font-raleway
     div#app data-behavior="vue"
+      div.fixed.bottom-3.right-3.z-50
+        ham-icon
       = yield
-      div.fixed.bottom-0.right-0.w-1/2.z-50
-        ham-menu

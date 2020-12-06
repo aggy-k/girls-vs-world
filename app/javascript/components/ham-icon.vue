@@ -1,5 +1,5 @@
 <template>
-  <div class="relative flex justify-center items-center w-20 h-20">
+  <div class="relative flex justify-center items-center w-20 h-20" style="z-index: 999;">
     <div class="circle absolute bottom-0 right-0" :class="{open: isOpen}"></div>
     <div id="nav-icon3" class="w-20 lg:w-8 h-16 lg:h-6" :class="{ open: isOpen }" @click="open">
       <span class="h-1 lg:h-1 top-0"></span>
